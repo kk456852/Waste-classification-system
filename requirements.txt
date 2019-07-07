@@ -1,10 +1,10 @@
 absl-py==0.7.1
 astor==0.8.0
 Django==2.2.3
-Pillow	6.1.0
-django-ckeditor	5.7.1
-django-js-asset	1.2.2
-django-simpleui	2.1.5
+Pillow==6.1.0
+django-ckeditor==5.7.1
+django-js-asset==1.2.2
+django-simpleui==2.1.5
 gast==0.2.2
 google-pasta==0.1.7
 grpcio==1.22.0

@@ -5,4 +5,6 @@ A system for automatic garbage sorting
 $ virtualenv WSC_ENV  
 $ cd /WSC_ENV/Scripts/activate  
 $ activate  
-$ pip install -r requirements.txt
+$ pip install -r requirements.txt  
+
+dasdsa

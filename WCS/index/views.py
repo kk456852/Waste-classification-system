@@ -7,6 +7,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import Image
 
 
+# 调用AI的函数
 # 调用模型，图片处理函数
 def image_recognize(img):
     pass

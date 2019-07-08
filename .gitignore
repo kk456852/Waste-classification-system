@@ -1,2 +1,6 @@
 /WSC_ENV/
 .gitignore
+data.csv
+/WCS/classification_AI/test_pic/
+/.vscode/
+h5f.pyx

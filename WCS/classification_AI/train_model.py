@@ -54,4 +54,4 @@ print('\ntest loss',loss)
 print('accuracy',accuracy)
  
 # 保存模型
-model.save('model.h5') 
+model.save('model_final.h5') 

@@ -10,4 +10,8 @@ $ cd /WSC_ENV/Scripts/activate
 
 $ activate  
 
-$ pip install -r requirements.txt  
+$ pip install -r requirements.txt
+
+##django management
+superuser name:test
+superuser password:123456

@@ -23,3 +23,5 @@ superuser password:123456
 file -> settings -> Languages & Frameworks -> Django -> 勾选Enable Support 并选择WCS为Django目录
 
 此时Tools工具栏中便可使用 Run manage.py Task...
+
+## 请将WCS目录设置为项目根目录

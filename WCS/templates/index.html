@@ -21,7 +21,8 @@
             <div class="bottom">
                 <form method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
-                    <input type="text" name="img_name">
+{#                    <input type="text" name="img_name">#}
+
                     <input type="file" name="upload_img" id="upload_img">
                     <button type="submit" name="submit_img">上传</button>
                     {% if category %}

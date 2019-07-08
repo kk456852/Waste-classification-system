@@ -1,0 +1,21 @@
+*{
+    /*清空内外边距边框样式*/
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*公共样式*/
+.container{
+    width: 1000px;
+    /*居中 m0auto*/
+    margin: 0 auto;
+}

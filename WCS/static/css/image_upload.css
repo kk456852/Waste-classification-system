@@ -1,0 +1,25 @@
+#image_upload{
+    background-color: #fff;
+}
+#image_upload .container .box .top{
+    background-color: white;
+    position: relative;
+    margin: auto;
+    padding: 35px 35px;
+    color: #666;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #767676;
+}
+#image_upload .container .box .top img{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 10px;
+}
+#image_upload .container .box .bottom{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+

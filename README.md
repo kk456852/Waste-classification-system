@@ -27,5 +27,3 @@ file -> settings -> Languages & Frameworks -> Django -> 勾选Enable Support 并
 ## 请将WCS目录设置为项目根目录
 
 
-
-##哈哈哈哈

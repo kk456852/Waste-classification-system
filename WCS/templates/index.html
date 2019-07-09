@@ -16,19 +16,24 @@
                 {% else %}
                     <img id="show_img" src="/static/images/img1.jpg">
                 {% endif %}
-
             </div>
             <div class="bottom">
                 <form method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
-{#                    <input type="text" name="img_name">#}
+                    {#                    <input type="text" name="img_name">#}
 
                     <input type="file" name="upload_img" id="upload_img">
                     <button type="submit" name="submit_img">上传</button>
-                    {% if category %}
-                        <textarea id="response-body">{{ category }}</textarea>
+                    {% if garbage_category %}
+                        <textarea id="response-body">{{ garbage_category }}</textarea>
                     {% else %}
                         <textarea id="response-body">垃圾种类</textarea>
+                    {% endif %}
+
+                    {% if good_category %}
+                        <textarea id="response-body">{{ good_category }}</textarea>
+                    {% else %}
+                        <textarea id="response-body">物品种类</textarea>
                     {% endif %}
                 </form>
             </div>

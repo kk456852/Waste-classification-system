@@ -1,0 +1,64 @@
+#main_body{
+    background-color: #fff;
+}
+#main_body .container .top .top_img{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    height: 85px;
+    width: 270px;
+}
+#main_body .container .top .top_img a img{
+    height: 85px;
+    width: 270px;
+}
+
+#main_body .container .bottom .category{
+    display: flex;
+    justify-content: space-between;
+}
+
+#main_body .container .bottom .category{
+    padding-top: 40px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+#main_body .container .bottom .category .box{
+    height: 180px;
+    width: 150px;
+}
+
+#main_body .container .bottom .category .box a img{
+    height: 180px;
+    width: 150px;
+}
+
+#main_body .container .top .search .container .row .form-inline{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    height: 34px;
+}
+
+#main_body .container .top .search button{
+    display: inline-block;
+    border: 1px solid #c0c0c0;
+    background: white;
+    padding: 7px 14px;
+    color: #0662ba;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    width: auto;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#main_body .container .top .search button:hover{
+    color: dodgerblue;
+}
+

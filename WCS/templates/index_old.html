@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单一图片判断</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/image_upload.css">
+</head>
+<body>
+<div id="image_upload">
+    <div class="container">
+        <div class="box">
+            <div class="top">
+                {% if img %}
+                    <img id="show_img" src="{{ img.image.url }}">
+                {% else %}
+                    <img id="show_img" src="/static/images/img1.jpg">
+                {% endif %}
+            </div>
+            <div class="bottom">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {#                    <input type="text" name="img_name">#}
+
+                    <input type="file" name="upload_img" id="upload_img">
+                    <button type="submit" name="submit_img">上传</button>
+                    {% if garbage_category %}
+                        <textarea id="response-body">{{ garbage_category }}</textarea>
+                    {% else %}
+                        <textarea id="response-body">垃圾种类</textarea>
+                    {% endif %}
+
+                    {% if good_category %}
+                        <textarea id="response-body">{{ good_category }}</textarea>
+                    {% else %}
+                        <textarea id="response-body">物品种类</textarea>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="/static/js/jquery-1.11.0.min.js"></script>
+<script>
+
+    // 上传文件按钮（label里的图片）点击事件
+    $('#upload_img').on('change', function () {
+        // 获取用户最后一次选择的图片
+        var choose_file = $(this)[0].files[0];
+        // 创建一个新的FileReader对象，用来读取文件信息
+        var reader = new FileReader();
+        // 读取用户上传的图片的路径
+        reader.readAsDataURL(choose_file);
+        // 读取完毕之后，将图片的src属性修改成用户上传的图片的本地路径
+        reader.onload = function () {
+            $("#show_img").attr("src", reader.result)
+        }
+    });
+</script>
+</body>
+</html>

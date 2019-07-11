@@ -27,6 +27,11 @@ urlpatterns = [
     # 首页
     url(r'^$', views.index),
     url(r'^index/', views.index),
+    url(r'^garbage_detail/', views.garbage_detail),
+    url(r'^hazardous_detail/', views.hazardous_detail),
+    url(r'^kitchen_detail/', views.kitchen_detail),
+    url(r'^other_detail/', views.other_detail),
+    url(r'^recycled_detail/', views.recycled_detail),
     url(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]

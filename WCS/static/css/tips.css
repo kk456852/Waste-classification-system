@@ -1,0 +1,98 @@
+#tips .box {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#tips .box .harm .throw {
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #99c4f6;
+    border-width: 8px;
+}
+
+#tips .box .harm .example {
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #99c4f6;
+    border-width: 8px;
+}
+
+#tips .box .harm h3 {
+    color: #f6ca41;
+
+}
+
+#tips .box .harm h2 {
+    color: #99c4f6;
+}
+
+#tips .box .kitchen .throw {
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #fd9696;
+    border-width: 8px;
+}
+
+#tips .box .kitchen .example {
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #fd9696;
+    border-width: 8px;
+}
+
+#tips .box .kitchen h3 {
+    color: tomato;
+
+}
+
+#tips .box .kitchen h2 {
+    color: #fd9696;
+}
+
+#tips .box .other .throw {
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #EEDC82;
+    border-width: 8px;
+}
+
+#tips .box .other .example {
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #EEDC82;
+    border-width: 8px;
+}
+
+#tips .box .other h3 {
+    color: lightgreen;
+
+}
+
+#tips .box .other h2 {
+    color: #EEDC82;
+}
+
+#tips .box .recycled .throw {
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #BBFFFF;
+    border-width: 8px;
+}
+
+#tips .box .recycled .example {
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #BBFFFF;
+    border-width: 8px;
+}
+
+#tips .box .recycled h3 {
+    color: coral;
+
+}
+
+#tips .box .recycled h2 {
+    color: #BBFFFF;
+}

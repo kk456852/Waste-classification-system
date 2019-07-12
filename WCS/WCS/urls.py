@@ -27,7 +27,9 @@ urlpatterns = [
     # 首页
     url(r'^$', views.index),
     url(r'^index/', views.index),
+    url(r'^index_text/', views.index_text),
     url(r'^garbage_detail/', views.garbage_detail),
+    url(r'^garbage_tips/', views.garbage_tips),
     url(r'^hazardous_detail/', views.hazardous_detail),
     url(r'^kitchen_detail/', views.kitchen_detail),
     url(r'^other_detail/', views.other_detail),

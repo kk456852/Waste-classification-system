@@ -5,8 +5,9 @@
     <title>垃圾分类</title>
 
     <link rel="stylesheet" type="text/css" href="/static/css/common.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/main_body.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/text_main_body.css">
     <link rel="stylesheet" type="text/css" href="/static/css/header.css">
+
     <link href="/static/css/jquery-filestyle.min.css" rel="stylesheet">
 </head>
 <body>
@@ -28,7 +29,7 @@
         </div>
     </div>
 </div>
-<div id="main_body">
+<div id="text_main_body">
     <div class="container">
         <div class="top">
             <div class="top_img">
@@ -39,19 +40,19 @@
                 </div>
             </div>
             <div class="search">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2">
-                                <section>
-                                    <form class="form-inline" method="POST" enctype="multipart/form-data">
-                                        {% csrf_token %}
-                                        <input type="file" class="jfilestyle" data-inputSize="400px" name="upload_img" id="upload_img">
-                                        <button type="submit" name="submit_img">上传</button>
-                                    </form>
-                                </section>
-                            </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <section>
+                                <form class="form-inline" method="POST" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <input type="text" class="jfilestyle" data-inputSize="400px" name="good">
+                                    <button type="submit" name="submit_img">确定</button>
+                                </form>
+                            </section>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
         <div class="center">

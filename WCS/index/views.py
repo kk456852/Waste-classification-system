@@ -57,24 +57,24 @@ def index(request):
             print(garbage_category)
             if garbage_category == '可循环物':
                 return render(request, 'recycled_detail.html',
-                       {
-                           'good': good,
-                       })
+                              {
+                                  'good': good,
+                              })
             elif garbage_category == '有害垃圾':
                 return render(request, 'hazardous_detail.html',
-                       {
-                           'good': good,
-                       })
+                              {
+                                  'good': good,
+                              })
             elif garbage_category == '其他垃圾':
                 return render(request, 'other_detail.html',
-                       {
-                           'good': good,
-                       })
+                              {
+                                  'good': good,
+                              })
             elif garbage_category == '厨余垃圾':
                 return render(request, 'kitchen_detail.html',
-                       {
-                           'good': good,
-                       })
+                              {
+                                  'good': good,
+                              })
 
     return render(request, 'index.html')
 
@@ -120,3 +120,40 @@ def other_detail(request):
 
 def recycled_detail(request):
     return render(request, 'recycled_detail.html')
+
+
+def index_text(request):
+    if request.method == 'POST':
+        # 获取前端传入的文件,并在图片数据库中创建词条
+        name = request.POST.get("good", None)
+        if GoodsCategory.objects.filter(name=name).exists():
+            good = GoodsCategory.objects.get(name=name)
+            garbage_category = good.garbage_category.name
+            if garbage_category == '可循环物':
+                return render(request, 'recycled_detail_text.html',
+                              {
+                                  'name': name,
+                              })
+            elif garbage_category == '有害垃圾':
+                return render(request, 'hazardous_detail_text.html',
+                              {
+                                  'name': name,
+                              })
+            elif garbage_category == '其他垃圾':
+                return render(request, 'other_detail_text.html',
+                              {
+                                  'name': name,
+                              })
+            elif garbage_category == '厨余垃圾':
+                return render(request, 'kitchen_detail_text.html',
+                              {
+                                  'name': name,
+                              })
+        else:
+            return render(request, 'garbage_tips_none.html')
+
+    return render(request, 'index_text.html')
+
+
+def garbage_tips(request):
+    return render(request, 'garbage_tips.html')

@@ -22,8 +22,12 @@
         </div>
         <div class="right">
             <ul>
-                <li><a href="/sign_in/">登录</a></li>
-                <li><a href="/sign_up/">注册</a></li>
+                {% if request.session.username %}
+                    <li><a href="/sign_out/">欢迎你：{{ request.session.username }}！</a></li>
+                {% else %}
+                    <li><a href="/sign_in/">登录</a></li>
+                    <li><a href="/sign_up/">注册</a></li>
+                {% endif %}
             </ul>
         </div>
     </div>
@@ -39,19 +43,20 @@
                 </div>
             </div>
             <div class="search">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2">
-                                <section>
-                                    <form class="form-inline" method="POST" enctype="multipart/form-data">
-                                        {% csrf_token %}
-                                        <input type="file" class="jfilestyle" data-inputSize="400px" name="upload_img" id="upload_img">
-                                        <button type="submit" name="submit_img">上传</button>
-                                    </form>
-                                </section>
-                            </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <section>
+                                <form class="form-inline" method="POST" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <input type="file" class="jfilestyle" data-inputSize="400px" name="upload_img"
+                                           id="upload_img">
+                                    <button type="submit" name="submit_img">上传</button>
+                                </form>
+                            </section>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
         <div class="center">

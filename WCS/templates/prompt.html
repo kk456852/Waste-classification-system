@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录提示</title>
+	<link rel="stylesheet" href="/static/css/sign_in.css">
+	<style>
+		a.active {
+			padding: 10px;
+			font-weight: 700;
+		    color: #ea6f5a;
+		    border-bottom: 2px solid #ea6f5a;
+		}
+
+		a.sign-up {
+			padding: 10px;
+			font-weight: 700;
+		    color: #969696;
+		}
+	</style>
+</head>
+<a href="javascript:countDown"></a>
+<meta http-equiv=refresh content=3;url='/sign_in/'/>
+<script language="javascript">
+    function countDown(secs) {
+        tiao.innerText = secs;
+        if (--secs > 0)
+            setTimeout("countDown(" + secs + ")", 1000);
+    }
+    countDown(3);
+</script>
+<body>
+	<div class="main">
+		<h4 class="title">
+			<a href="" class="active">登录</a>
+			<b>·</b>
+			<a href="/sign_up/" class="sign-up">注册</a>
+		</h4>
+		<div class="sign-container">
+            <br>
+            <br>
+			<h3>请登录使用图片识别功能</h3>
+            <h4>3s后自动跳转</h4>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

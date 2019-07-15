@@ -1,0 +1,34 @@
+#header,
+#header .container{
+    /*h200 TAB*/
+    height: 32px;
+    /*宽度不设*/
+    background-color: white;
+    /*
+    行高
+    */
+    line-height: 32px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: whitesmoke;
+    font-size: 12px;
+}
+
+#header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .container ul{
+    display: flex;
+    justify-content: center;
+}
+
+#header ul a{
+    margin-left: 20px;
+    color: black;
+}
+
+#header ul a:hover{
+    color:cadetblue;
+}

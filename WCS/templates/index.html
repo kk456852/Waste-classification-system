@@ -2,56 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>单一图片判断</title>
+    <title>垃圾分类</title>
+
     <link rel="stylesheet" type="text/css" href="/static/css/common.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/image_upload.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main_body.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/header.css">
+    <link href="/static/css/jquery-filestyle.min.css" rel="stylesheet">
 </head>
 <body>
-<div id="image_upload">
+<div id="header">
     <div class="container">
-        <div class="box">
-            <div class="top">
-                {% if img %}
-                    <img id="show_img" src="{{ img.image.url }}">
-                {% else %}
-                    <img id="show_img" src="/static/images/img1.jpg">
-                {% endif %}
-
-            </div>
-            <div class="bottom">
-                <form method="POST" enctype="multipart/form-data">
-                    {% csrf_token %}
-{#                    <input type="text" name="img_name">#}
-
-                    <input type="file" name="upload_img" id="upload_img">
-                    <button type="submit" name="submit_img">上传</button>
-                    {% if category %}
-                        <textarea id="response-body">{{ category }}</textarea>
-                    {% else %}
-                        <textarea id="response-body">垃圾种类</textarea>
-                    {% endif %}
-                </form>
-            </div>
+        <div class="left">
+            <ul>
+                <li><a href="/index/">主页</a></li>
+                <li><a href="/index_text/">直接检索</a></li>
+                <li><a href="/garbage_tips/">垃圾分类小贴士</a></li>
+                <li><a href="">社会责任</a></li>
+            </ul>
         </div>
-
+        <div class="right">
+            <ul>
+                <li><a href="">登录</a></li>
+                <li><a href="">注册</a></li>
+            </ul>
+        </div>
     </div>
 </div>
-<script src="/static/js/jquery-1.11.0.min.js"></script>
-<script>
-
-    // 上传文件按钮（label里的图片）点击事件
-    $('#upload_img').on('change', function () {
-        // 获取用户最后一次选择的图片
-        var choose_file = $(this)[0].files[0];
-        // 创建一个新的FileReader对象，用来读取文件信息
-        var reader = new FileReader();
-        // 读取用户上传的图片的路径
-        reader.readAsDataURL(choose_file);
-        // 读取完毕之后，将图片的src属性修改成用户上传的图片的本地路径
-        reader.onload = function () {
-            $("#show_img").attr("src", reader.result)
-        }
-    });
-</script>
+<div id="main_body">
+    <div class="container">
+        <div class="top">
+            <div class="top_img">
+                <div>
+                    <a href="">
+                        <img src="/static/images/front/top_img2.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="search">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <section>
+                                    <form class="form-inline" method="POST" enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        <input type="file" class="jfilestyle" data-inputSize="400px" name="upload_img" id="upload_img">
+                                        <button type="submit" name="submit_img">上传</button>
+                                    </form>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="center">
+        </div>
+        <div class="bottom">
+            <div class="category">
+                <div class="box">
+                    <div>
+                        <a href="">
+                            <img src="/static/images/front/recycled_content.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <a href="">
+                            <img src="/static/images/front/kitchen_garbage.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <a href="">
+                            <img src="/static/images/front/other_garbage.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <a href="">
+                            <img src="/static/images/front/hazardous_waste.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery-filestyle.min.js" charset="utf-8"></script>
 </body>
 </html>

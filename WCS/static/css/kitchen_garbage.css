@@ -1,0 +1,73 @@
+#kitchen_garbage{
+    padding-top: 10px;
+    background-color: #fff;
+}
+#kitchen_garbage .top{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+#kitchen_garbage .top .right{
+    width: 370px;
+    height: 210px;
+    background-color: white;
+    border-style:solid;
+    border-color: #fd9696;
+    border-width: 6px;
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+#kitchen_garbage .top .right img{
+    height: 200px;
+    width: 60%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+#kitchen_garbage .top .left{
+    padding-right: 40px;
+    height: 270px;
+    width: 180px;
+}
+
+#kitchen_garbage .top .left img{
+    height: 220px;
+    width: 180px;
+}
+
+#kitchen_garbage .box{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+#kitchen_garbage .box .throw{
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #FD9696;
+    border-width: 8px;
+}
+#kitchen_garbage .box .example{
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #FD9696;
+    border-width: 8px;
+}
+
+#kitchen_garbage .box h3{
+    color: tomato;
+
+}
+
+#kitchen_garbage .good_name{
+    margin: 0 auto;
+    width: 70%;
+}
+
+#kitchen_garbage .good_name h2{
+    color: tomato;
+}

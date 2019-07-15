@@ -1,0 +1,73 @@
+#recycled_content{
+    padding-top: 10px;
+    background-color: #fff;
+}
+#recycled_content .top{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+#recycled_content .top .right{
+    width: 370px;
+    height: 210px;
+    background-color: white;
+    border-style:solid;
+    border-color: #BBFFFF;
+    border-width: 6px;
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+#recycled_content .top .right img{
+    height: 200px;
+    width: 60%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+#recycled_content .top .left{
+    padding-right: 40px;
+    height: 270px;
+    width: 180px;
+}
+
+#recycled_content .top .left img{
+    height: 220px;
+    width: 180px;
+}
+
+#recycled_content .box{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+#recycled_content .box .throw{
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #BBFFFF;
+    border-width: 8px;
+}
+#recycled_content .box .example{
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #BBFFFF;
+    border-width: 8px;
+}
+
+#recycled_content .box h3{
+    color: coral;
+
+}
+
+#recycled_content .good_name{
+    margin: 0 auto;
+    width: 70%;
+}
+
+#recycled_content .good_name h2{
+    color: coral;
+}

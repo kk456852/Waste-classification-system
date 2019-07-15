@@ -1,0 +1,73 @@
+#hazardous_waste{
+    padding-top: 10px;
+    background-color: #fff;
+}
+#hazardous_waste .top{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+#hazardous_waste .top .right{
+    width: 370px;
+    height: 210px;
+    background-color: white;
+    border-style:solid;
+    border-color: #99c4f6;
+    border-width: 6px;
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+#hazardous_waste .top .right img{
+    height: 200px;
+    width: 60%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+#hazardous_waste .top .left{
+    padding-right: 40px;
+    height: 270px;
+    width: 180px;
+}
+
+#hazardous_waste .top .left img{
+    height: 220px;
+    width: 180px;
+}
+
+#hazardous_waste .box{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+#hazardous_waste .box .throw{
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #99c4f6;
+    border-width: 8px;
+}
+#hazardous_waste .box .example{
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #99c4f6;
+    border-width: 8px;
+}
+
+#hazardous_waste .box h3{
+    color: #f6ca41;
+
+}
+
+#hazardous_waste .good_name{
+    margin: 0 auto;
+    width: 70%;
+}
+
+#hazardous_waste .good_name h2{
+    color: #f6ca41;
+}

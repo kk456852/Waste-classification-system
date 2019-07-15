@@ -157,3 +157,9 @@ def index_text(request):
 
 def garbage_tips(request):
     return render(request, 'garbage_tips.html')
+
+def sign_in(request):
+    return render(request, 'sign_in.html')
+
+def sign_up(request):
+    return render(request, 'sign_up.html')

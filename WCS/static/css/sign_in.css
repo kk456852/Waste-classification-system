@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: #f1f1f1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5rem;
+	width: 400px;
+	height: 25em;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 0 8px rgba(0,0,0,.1);
+	padding: 50px 50px 30px;
+}
+.title {
+	margin: 0 auto 50px;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+a:hover {
+	border-bottom: 2px solid #ea6f5a;
+}
+
+b {
+	color: #969696;
+}
+
+.inputbox {
+	width: 100%;
+}
+.inputbox input {
+	border-bottom: none;
+    
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;
+    padding: 4px 12px 4px 35px;
+    border: 1px solid #c8c8c8;
+    background-color: hsla(0,0%,71%,.1);
+    vertical-align: middle;
+    font-size: 14px;
+}/*
+.inputbox input::webkit-input-placeholder {
+	font-weight: 700;
+	color: #969696;
+	font-size: 50px;
+}*/
+.inputbox #email_or_mobile_number {
+	border-radius: 4px 4px 0 0;
+}
+.inputbox #user_name {
+	border-radius: 4px 4px 0 0;
+}
+.inputbox #mobile_number {
+	border-top: none;
+}
+.inputbox #password {
+	border-top: none;
+	border-radius: 0 0 4px 4px;
+}
+
+.below-input {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.remember-btn {
+	float: left;
+	margin: 15px 0;
+}
+
+.remember-btn input {
+	margin: 4px 0 0;
+	line-height: normal;
+}
+
+.remember-btn span, a {
+    font-size: 15px;
+    color: #969696;
+    vertical-align: middle;
+}
+
+.forget-btn {
+	float: right;
+    position: relative;
+    margin: 17px 0 0 0;
+    font-size: 14px;
+}
+
+button {
+	margin-top: 20px;
+    width: 100%;
+    padding: 9px 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    background: #3194d0;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    clear: both;
+}
+
+.sign-up-msg {
+	margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: #969696;
+}
+
+.sign-up-msg a{
+	color: #3194d0
+}

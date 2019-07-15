@@ -34,6 +34,8 @@ urlpatterns = [
     url(r'^kitchen_detail/', views.kitchen_detail),
     url(r'^other_detail/', views.other_detail),
     url(r'^recycled_detail/', views.recycled_detail),
+    url(r'^sign_in/', views.sign_in),
+    url(r'^sign_up/', views.sign_up),
     url(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]

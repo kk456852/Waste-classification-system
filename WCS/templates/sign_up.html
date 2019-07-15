@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="/static/css/sign_in.css">
+	<style>
+		a.sign-up {
+			padding: 10px;
+			font-weight: 700;
+		    color: #ea6f5a;
+		    border-bottom: 2px solid #ea6f5a;
+		}
+
+		a.active {
+			padding: 10px;
+			font-weight: 700;
+		    color: #969696;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="title">
+			<a href="/sign_in/" class="active">登录</a>
+			<b>·</b>
+			<a href="" class="sign-up">注册</a>
+		</div>
+		<div class="sign-container">
+			<form action="" id="new_session">
+				<div class="inputbox">
+					<input type="text" placeholder="你的昵称" id="user_name">
+					<input type="text" placeholder="手机号" id="mobile_number">
+					<input type="text" placeholder="设置密码" id="password">
+				</div>
+				<button class="sign-in-btn" id="sign_in_form_submit" style="background: #42c02e;">
+					<span>注册</span>
+				</button>
+				<p class="sign-up-msg">
+					点击 “注册” 即表示您同意并愿意遵守
+					<br>
+					<a href="">用户协议</a>
+					和
+					<a href="">隐私政策</a>
+				</p>
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -30,9 +30,9 @@
 			<form action="" id="new_session" method = "post">
                 {% csrf_token %}
 				<div class="inputbox">
-					<input type="text" placeholder="你的用户名" name="username" >
-					<input type="password" placeholder="设置密码" name="password">
-					<input type="password" placeholder="再次输入密码" name="password_again">
+					<input type="text" placeholder="你的用户名" name="username" id="username_up">
+					<input type="password" placeholder="设置密码" name="password" id="password_up">
+					<input type="password" placeholder="再次输入密码" name="password_again" id="password_up_again">
 				</div>
 				<button class="sign-in-btn" id="sign_in_form_submit" style="background: #42c02e;">
 					<span>注册</span>

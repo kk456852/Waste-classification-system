@@ -59,16 +59,16 @@ b {
 	color: #969696;
 	font-size: 50px;
 }*/
-.inputbox #email_or_mobile_number {
+.inputbox #username_in {
 	border-radius: 4px 4px 0 0;
 }
-.inputbox #user_name {
+.inputbox #user_name_up {
 	border-radius: 4px 4px 0 0;
 }
-.inputbox #password {
+.inputbox #password_up {
 	border-top: none;
 }
-.inputbox #password_again {
+.inputbox #password_up_again, #password_in {
 	border-top: none;
 	border-radius: 0 0 4px 4px;
 }

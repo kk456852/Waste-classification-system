@@ -6,7 +6,7 @@ import hashlib
 # 导入分页插件包
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # 引入模型
-from .models import Image, GarbageCategory, GoodsCategory
+from .models import Image, GarbageCategory, GoodsCategory,Users
 from classification_AI.model_load_predict import ProcessAPI
 
 goods = {
@@ -159,7 +159,45 @@ def garbage_tips(request):
     return render(request, 'garbage_tips.html')
 
 def sign_in(request):
+    if request.method == 'POST':
+        username = request.POST.get("username") #按name获取
+        password = request.POST.get("password")
+
+        sha256 = hashlib.sha256(bytes('加一些东西', encoding='utf-8') + b'zqacm')
+        sha256.update(bytes(password, encoding='utf-8'))
+        password = sha256.hexdigest()
+
+        # 查询
+        ret = Users.objects.filter(username=username, password=password)
+        # print(ret)
+        # print(type(ret))
+        if ret:
+            return redirect('/index/')
+        else:
+            return redirect('/sign_in/')
+
     return render(request, 'sign_in.html')
 
 def sign_up(request):
+    # 接收前端数据保存到数据库
+    if request.method == 'POST':
+        # print('POST_hello')
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        password_again = request.POST.get('password_again')
+
+        # 存到数据库
+        if username and password and password == password_again:
+            # 缺少头像
+            sha256 = hashlib.sha256(bytes('加一些东西', encoding='utf-8') + b'zqacm')
+            sha256.update(bytes(password, encoding='utf-8'))
+            password = sha256.hexdigest()
+            ret = Users.objects.create(username=username, password=password)
+            if ret:
+                # 成功了
+                return redirect('/sign_in/')
+        else:
+            return redirect('/sign_up/')
+
+
     return render(request, 'sign_up.html')

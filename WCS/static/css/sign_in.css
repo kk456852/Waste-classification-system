@@ -65,10 +65,10 @@ b {
 .inputbox #user_name {
 	border-radius: 4px 4px 0 0;
 }
-.inputbox #mobile_number {
+.inputbox #password {
 	border-top: none;
 }
-.inputbox #password {
+.inputbox #password_again {
 	border-top: none;
 	border-radius: 0 0 4px 4px;
 }

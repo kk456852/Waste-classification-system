@@ -27,10 +27,11 @@
 			<a href="/sign_up/" class="sign-up">注册</a>
 		</h4>
 		<div class="sign-container">
-			<form action="" id="new_session">
+			<form action="" id="new_session" method="post">
+                {% csrf_token %}
 				<div class="inputbox">
-					<input type="text" placeholder="手机号或邮箱" id="email_or_mobile_number">
-					<input type="text" placeholder="密码" id="password">
+					<input type="text" placeholder="用户名" name="username">
+					<input type="password" placeholder="密码" name="password">
 				</div>
 				<div class="below-input">
 					<div class="remember-btn">

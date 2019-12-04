@@ -1,6 +1,6 @@
 absl-py==0.7.1
 astor==0.8.0
-Django==2.2.3
+Django==2.2.8
 Pillow==6.1.0
 django-ckeditor==5.7.1
 django-js-asset==1.2.2
